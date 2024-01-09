@@ -1,18 +1,42 @@
 <!DOCTYPE html>
-
-<html>
+<html lang="en">
 <head>
-  <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
-  <title>my-first-website</title>
-  <LINK href="styles.css" rel="stylesheet" type="text/css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href='https://unpkg.com/boxicons@2.1.1/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="https://ucarecdn.com/82fbdee8-aad4-4220-9809-e1a8b55a776c/chatbotstyle.css">
+    <title>Chatbox</title>
 </head>
-
 <body>
 
-<img src="https://octodex.github.com/images/daftpunktocat-thomas.gif" id="octocat" alt="octocat-gif" />
 
-<!-- Change this code here by copy and pasting your template on line 15 -->
-<p>Welcome to your first GitHub Pages website!</p>
+<div class="chatbox-wrapper">
+    <div class="chatbox-toggle">
+        <i class='bx bx-message-dots'></i>
+    </div>
+    <div class="chatbox-message-wrapper">
+        <div class="chatbox-message-header">
+            <div class="chatbox-message-profile">
+                <img src="https://images.unsplash.com/photo-1570295999919-56ceb5ecca61?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8Nnx8bWFufGVufDB8fDB8fA%3D%3D&auto=format&fit=crop&w=500&q=60" alt="" class="chatbox-message-image">
+                <div>
+                    <h4 class="chatbox-message-name">Jesper</h4>
+                    <p class="chatbox-message-status">online</p>
+                </div>
+            </div>
+        </div>
+        <div class="chatbox-message-content">
+            <h4 class="chatbox-message-no-message">Chatta med Jesper som är online!</h4>
+        </div>
+        <div class="chatbox-message-bottom">
+            <form action="#" class="chatbox-message-form">
+                <textarea rows="1" placeholder="Skriv med Jesper..." class="chatbox-message-input"></textarea>
+                <button type="submit" class="chatbox-message-submit"><i class='bx bx-send' ></i></button>
+            </form>
+        </div>
+    </div>
+</div>
 
+
+<script src="https://ucarecdn.com/9fbf6166-fba5-43da-b658-507ed5c66e1a/chatbotjs.js"></script>
 </body>
 </html>
